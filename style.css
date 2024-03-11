@@ -28,5 +28,13 @@ th:hover {
   color: blue;
 }
 button {
-  background-color: aquamarine;
+  background-color: beige;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  th,
+  td {
+    font-size: 12px;
+  }
 }
