@@ -4,75 +4,147 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.11.6/css/jquery.dataTables.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha256-xj9VBLvo83qXzRZfKKXTnT6zjgRce1zeP5WHNFq0F1g="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <table>
-      <thead>
-        <tr>
-          <th>Select option</th>
-          <th>ID</th>
-          <th>Product Name</th>
-          <th>Product title</th>
-          <th>Product description</th>
-          <th>Product vendor</th>
-          <th>In stock</th>
-          <th>Buying price</th>
-          <th>Sale price</th>
-          <th>Purchase quantity</th>
-          <th>Product type</th>
-          <th>Shipping rates</th>
-          <th>Refill limit</th>
-          <th>Product location address</th>
-          <th class="actions">
-            Actions (add vendor, add products, edit products)
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Option 1</td>
-          <td>001</td>
-          <td>Product A</td>
-          <td>Title A</td>
-          <td>Description A</td>
-          <td>Vendor A</td>
-          <td>50</td>
-          <td>$20.00</td>
-          <td>$25.00</td>
-          <td>100</td>
-          <td>Type A</td>
-          <td>$5.00</td>
-          <td>200</td>
-          <td>12 Twinflower St</td>
-          <td class="actions">
-            <button>Add Vendor</button>
-            <button>Add Products</button>
-            <button>Edit Products</button>
-          </td>
-        </tr>
-        <!-- Second row data   -->
-        <tr>
-          <td>Option 2</td>
-          <td>002</td>
-          <td>Product B</td>
-          <td>Title B</td>
-          <td>Description B</td>
-          <td>Vendor B</td>
-          <td>70</td>
-          <td>$30.00</td>
-          <td>$35.00</td>
-          <td>200</td>
-          <td>Type B</td>
-          <td>$7.00</td>
-          <td>300</td>
-          <td>17 Bleeker's St</td>
-          <td class="actions">
-            <button>Add Vendor</button>
-            <button>Add Products</button>
-            <button>Edit Products</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Select option</th>
+            <th>ID</th>
+            <th class="actions">Product Name</th>
+            <th class="actions">Product title</th>
+            <th class="actions">Product description</th>
+            <th class="actions">Product Vendor</th>
+            <!-- <th>In Stock</th> -->
+            <th>Price</th>
+            <th>Sale</th>
+            <th>Quantity</th>
+            <th>Type</th>
+            <th>Shipping Rates</th>
+            <!-- <th class="actions">Refill Limit</th> -->
+            <th class="actions">Product Location Address</th>
+            <th class="actions">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          Table created using HTML & CSS
+          <tr>
+            <td>
+              <span><input type="checkbox" /></span>
+            </td>
+            <td>001</td>
+            <td>Eyeliner</td>
+            <td>Miss Rose</td>
+            <td>FIne eyeliner</td>
+            <td>She</td>
+            <!-- <td>50</td> -->
+            <td>Rs.320.00</td>
+            <td>Rs.520.00</td>
+            <td>100</td>
+            <td>Skin</td>
+            <td>Rs.100.00</td>
+            <!-- <td>200</td> -->
+            <td>12 Heavens St</td>
+            <td class="actions">
+              <i title="Add Vendor" class="fa fa-user-plus icons"></i>
+  
+              <i class="fa fa-plus icons" title="Add Products"></i>
+              <i class="fa fa-edit icons" title="Edit Products"></i>
+            </td>
+          </tr>
+          <!-- Second row -->
+          <tr>
+            <td>
+              <span><input type="checkbox" /></span>
+            </td>
+            <td>002</td>
+            <td>Blusher</td>
+            <td>Miss Rose</td>
+            <td>Prompts skin</td>
+            <td>Scentsations</td>
+            <!-- <td>50</td> -->
+            <td>Rs.420.00</td>
+            <td>Rs.590.00</td>
+            <td>100</td>
+            <td>Skin</td>
+            <td>Rs.100.00</td>
+            <!-- <td>200</td> -->
+            <td>12 Bleeker's St</td>
+            <td class="actions">
+              <i title="Add Vendor" class="fa fa-user-plus icons"></i>
+  
+              <i class="fa fa-plus icons" title="Add Products"></i>
+              <i class="fa fa-edit icons" title="Edit Products"></i>
+            </td>
+          </tr>
+          <!-- Third row-->
+          <tr>
+            <td>
+              <span><input type="checkbox" /></span>
+            </td>
+            <td>003</td>
+            <td>Primer</td>
+            <td>Miss Rose</td>
+            <td>Enhances make-up stay</td>
+            <td>Metro</td>
+            <!-- <td>24</td> -->
+            <td>Rs.400.00</td>
+            <td>Rs.620.00</td>
+            <td>100</td>
+            <td>Skin</td>
+            <td>Rs.100.00</td>
+            <!-- <td>200</td> -->
+            <td>12 Irvine St</td>
+            <td class="actions">
+              <i title="Add Vendor" class="fa fa-user-plus icons"></i>
+  
+              <i class="fa fa-plus icons" title="Add Products"></i>
+              <i class="fa fa-edit icons" title="Edit Products"></i>
+            </td>
+          </tr>
+          <!-- Fourth row -->
+          <tr>
+            <td>
+              <span><input type="checkbox" /></span>
+            </td>
+            <td>004</td>
+            <td>Highlighter</td>
+            <td>Miss Rose</td>
+            <td>Gives glow to skin</td>
+            <td>Enem</td>
+            <!-- <td>50</td> -->
+            <td>Rs.520.00</td>
+            <td>Rs.720.00</td>
+            <td>100</td>
+            <td>Skin</td>
+            <td>Rs.100.00</td>
+            <!-- <td>200</td> -->
+            <td>12 Twinflower St</td>
+            <td class="actions">
+              <i title="Add Vendor" class="fa fa-user-plus icons"></i>
+  
+              <i class="fa fa-plus icons" title="Add Products"></i>
+              <i class="fa fa-edit icons" title="Edit Products"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
