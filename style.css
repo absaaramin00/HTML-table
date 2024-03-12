@@ -10,6 +10,7 @@ table {
 
 th,
 td {
+  font-size: 12px;
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
@@ -20,9 +21,4 @@ td {
 }
 button {
   background-color: beige;
-}
-
-th,
-td {
-  font-size: 12px;
 }
